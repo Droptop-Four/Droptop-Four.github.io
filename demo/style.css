@@ -22,6 +22,7 @@
 
 
 .droptop-left {
+    float: left;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -30,7 +31,21 @@
     
 }
 
-.droptop-left-button {
+
+.droptop-right {
+    
+    display: flex;
+    flex-direction: row;
+
+    justify-content: flex-end;
+    margin-left: auto;
+    padding-right: 20px;
+
+    color: var(--droptop-button-hover-color);
+    
+}
+
+.droptop-button {
     padding: 4px;
     margin-left: 2px;
     margin-right: 2px;
@@ -43,7 +58,7 @@
 
 }
 
-.droptop-left-button:hover {
+.droptop-button:hover {
     background-color: var(--droptop-button-hover-color);
 }
 
@@ -79,4 +94,25 @@
     
 
 
+}
+
+.droptop-imagebtnbtn {
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.droptop-baticon {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+/* Terrible class names 🤨 */
+
+
+.droptop-imagebtn {
+    /* Make the image fit the button */
+    
+    height: 14px;
+    position: relative;
 }
